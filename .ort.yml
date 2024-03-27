@@ -116,11 +116,6 @@ resolutions:
       reason: "CANT_FIX_EXCEPTION"
       comment: "License is in a license information file. The license defines that fonts used in documentation are under the concluded license and therefore is not an issue."
 
-    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-broker:5.16.7."
-      reason: "CANT_FIX_EXCEPTION"
-      comment: "As for now, ORT seems to not understand license choices. This should be under MIT license."
-
-
 curations:
   license_findings:
   - path: "Core/Domibus-MSH-api/src/main/java/eu/domibus/api/util/BCryptPasswordHash.java"
@@ -159,6 +154,8 @@ license_choices:
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
       choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
+      choice: "MIT"
 
 license_choices:
   package_license_choices:
@@ -168,11 +165,15 @@ license_choices:
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
       choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
+      choice: "MIT"
   - package_id: "Maven:org.apache.activemq:activemq-client:5.16.7"
     license_choices:
     - given: "MIT OR GPL-2.0-only"
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
       choice: "MIT"
   - package_id: "Maven:org.apache.activemq:activemq-spring:5.16.7"
     license_choices:
@@ -180,11 +181,15 @@ license_choices:
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
       choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
+      choice: "MIT"
   - package_id: "Maven:com.sun.xml.bind:jaxb-impl:2.3.9"
     license_choices:
     - given: "MIT OR GPL-1.0-or-later"
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
       choice: "MIT"
   - package_id: "Maven:org.apache.activemq:activemq-jaas:5.16.7"
     license_choices:
@@ -192,9 +197,13 @@ license_choices:
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
       choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
+      choice: "MIT"
   - package_id: "Maven:org.apache.activemq:activemq-kahadb-store:5.16.7"
     license_choices:
     - given: "MIT OR GPL-2.0-only"
       choice: "MIT"
     - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR GPL-2.0-only AND (MIT OR BSD-3-Clause OR GPL-2.0-only)"
       choice: "MIT"

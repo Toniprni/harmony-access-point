@@ -45,6 +45,10 @@ excludes:
     reason: "TEST_OF"
     comment: "This directory contains tests."
 
+  - pattern: ".ort.yml"
+    reason: "DOCUMENTATION_OF"
+    comment: "This directory contains ort exclusions et al."
+
   scopes:
   - pattern: "checkstyle"
     reason: "BUILD_DEPENDENCY_OF"
@@ -108,6 +112,15 @@ resolutions:
       reason: "LICENSE_ACQUIRED_EXCEPTION"
       comment: "EUPL-1.2 is the main license of the project and therefore not an issue. All EUPL-1.1 matches are under EUPL-1.2."
 
+    - message: "copyleft-strong license CC-BY-SA-3.0 in Maven:org.freemarker:freemarker:2.3.32."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License is in a license information file. The license defines that fonts used in documentation are under the concluded license and therefore is not an issue."
+
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-broker:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "As for now, ORT seems to not understand license choices. This should be under MIT license."
+
+
 curations:
   license_findings:
   - path: "Core/Domibus-MSH-api/src/main/java/eu/domibus/api/util/BCryptPasswordHash.java"
@@ -115,13 +128,25 @@ curations:
     reason: "INCORRECT"
     comment: "Incorrect scanner match."
     concluded_license: "EUPL-1.2"
+  - path: "third-party/mysql-connector-licensing"
+    reason: "INCORRECT"
+    comment: "Incorrect scanner match."
+    concluded_license: "GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018 AND GPL-2.0-only WITH Universal-FOSS-exception-1.0 AND (LGPL-2.1-only OR EPL-1.0) AND LicenseRef-scancode-protobuf AND BSD-3-Clause AND EPL-2.0 AND Apache-2.0 AND MIT AND Unicode-DFS-2015"
+  - path: "Core/Domibus-MSH-angular/package-lock.json"
+    reason: "INCORRECT"
+    comment: "Incorrect scanner match."
+    concluded_license: "MIT"
+  - path: "pom.xml"
+    reason: "INCORRECT"
+    comment: "Incorrect scanner match."  
+    concluded_license: "NONE"
+  - path: "Core/Domibus-MSH/src/main/resources/config/infinispan/domibus-infinispan-default.xml"
+    reason: "INCORRECT"
+    comment: "Incorrect scanner match."  
+    concluded_license: "LGPL-2.1-or-later"
 
 license_choices:
   repository_license_choices:
-    - given: "MIT OR GPL-2.0-only"
-      choice: "MIT"
-    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
-      choice: "MIT"
     - given: "MIT OR GPL-1.0-or-later"
       choice: "MIT"
     - given: "MIT OR AFL-2.1"
@@ -130,3 +155,16 @@ license_choices:
       choice: "CDDL-1.1"
     - given: "CDDL-1.0 OR GPL-2.0-only"
       choice: "CDDL-1.0"
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+
+license_choices:
+  package_license_choices:
+  - package_id: "Maven:org.apache.activemq:.*"
+    license_choices:
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"

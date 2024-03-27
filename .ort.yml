@@ -116,6 +116,30 @@ resolutions:
       reason: "CANT_FIX_EXCEPTION"
       comment: "License is in a license information file. The license defines that fonts used in documentation are under the concluded license and therefore is not an issue."
 
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-broker:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "As for now, ORT seems to not understand license choices. This should be under MIT license."
+    
+    - message: "copyleft-strong license GPL-2.0-only in Maven:javax.jws:jsr181-api:1.0-MR1."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License choices as for now do not work and therefore choice is as a resolution. Chosen license is the MIT license."
+
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-client:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License choices as for now do not work and therefore choice is as a resolution. Chosen license is the MIT license."
+
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-jaas:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License choices as for now do not work and therefore choice is as a resolution. Chosen license is the MIT license."
+
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-kahadb-store:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License choices as for now do not work and therefore choice is as a resolution. Chosen license is the MIT license."
+
+    - message: "copyleft-strong license GPL-2.0-only in Maven:org.apache.activemq:activemq-spring:5.16.7."
+      reason: "CANT_FIX_EXCEPTION"
+      comment: "License choices as for now do not work and therefore choice is as a resolution. Chosen license is the MIT license."
+
 curations:
   license_findings:
   - path: "Core/Domibus-MSH-api/src/main/java/eu/domibus/api/util/BCryptPasswordHash.java"

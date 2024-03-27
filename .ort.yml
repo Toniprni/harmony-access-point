@@ -162,7 +162,37 @@ license_choices:
 
 license_choices:
   package_license_choices:
-  - package_id: "Maven:org.apache.activemq:.*"
+  - package_id: "Maven:javax.jws:jsr181-api:1.0-MR1"
+    license_choices:
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+  - package_id: "Maven:org.apache.activemq:activemq-client:5.16.7"
+    license_choices:
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+  - package_id: "Maven:org.apache.activemq:activemq-spring:5.16.7"
+    license_choices:
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+  - package_id: "Maven:com.sun.xml.bind:jaxb-impl:2.3.9"
+    license_choices:
+    - given: "MIT OR GPL-1.0-or-later"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+  - package_id: "Maven:org.apache.activemq:activemq-jaas:5.16.7"
+    license_choices:
+    - given: "MIT OR GPL-2.0-only"
+      choice: "MIT"
+    - given: "MIT OR BSD-3-Clause OR GPL-2.0-only"
+      choice: "MIT"
+  - package_id: "Maven:org.apache.activemq:activemq-kahadb-store:5.16.7"
     license_choices:
     - given: "MIT OR GPL-2.0-only"
       choice: "MIT"

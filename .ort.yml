@@ -183,3 +183,5 @@ license_choices:
     choice: "Apache-2.0 AND MIT AND BSD-3-Clause AND CC-BY-2.5 AND CDDL-1.0 AND LicenseRef-scancode-jdom AND LicenseRef-scancode-mx4j AND Apache-1.1 AND LicenseRef-scancode-public-domain"
   - given: "GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018 AND GPL-2.0-only WITH Universal-FOSS-exception-1.0 AND (LGPL-2.1-only OR EPL-1.0) AND LicenseRef-scancode-protobuf AND BSD-3-Clause AND EPL-2.0 AND Apache-2.0 AND MIT AND Unicode-DFS-2015"
     choice: "GPL-2.0-only WITH LicenseRef-scancode-mysql-linking-exception-2018 AND GPL-2.0-only WITH Universal-FOSS-exception-1.0 AND EPL-1.0 AND LicenseRef-scancode-protobuf AND BSD-3-Clause AND EPL-2.0 AND Apache-2.0 AND MIT AND Unicode-DFS-2015"
+  - given: "BSD-3-Clause AND Apache-2.0 AND (GPL-2.0-only OR GPL-2.0-only WITH Classpath-exception-2.0) AND MIT"
+    choice: "BSD-3-Clause AND Apache-2.0 AND GPL-2.0-only WITH Classpath-exception-2.0 AND MIT"

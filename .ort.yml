@@ -49,6 +49,10 @@ excludes:
     reason: "DOCUMENTATION_OF"
     comment: "The file is a third party license notice. The package itself does not contain the files referenced in the license notice."
 
+  - pattern: ".ort.yml"
+    reason: "DOCUMENTATION_OF"
+    comment: "The file is a oss review toolkit configuration file."
+
   scopes:
   - pattern: "checkstyle"
     reason: "BUILD_DEPENDENCY_OF"
